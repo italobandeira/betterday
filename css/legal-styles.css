@@ -158,7 +158,8 @@
     padding: 16px 20px;
     border-radius: 8px;
     font-style: italic;
-    margin-top: 16px;
+    align-items: center;
+    justify-content: center;
 }
 
 .legal-note i {
@@ -246,6 +247,87 @@
 
 .contact-box .legal-link {
     font-size: 18px;
+}
+
+/* Terms of Use Specific Styles */
+.definitions-grid {
+    display: grid;
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.definition-item {
+    padding: 16px 20px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+    border-left: 3px solid rgba(5, 150, 105, 0.3);
+    transition: all 0.3s;
+}
+
+.definition-item:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-left-color: var(--primary-green);
+}
+
+.definition-item strong {
+    color: var(--primary-green);
+    font-size: 16px;
+}
+
+.warning-box {
+    display: flex;
+    gap: 16px;
+    background: rgba(255, 193, 7, 0.1);
+    border-left: 4px solid #ffc107;
+    padding: 20px 24px;
+    border-radius: 8px;
+    margin: 16px 0;
+}
+
+.warning-box i {
+    color: #ffc107;
+    font-size: 24px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.warning-box .legal-text {
+    margin-bottom: 8px;
+}
+
+.warning-box .legal-list {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.prohibited-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding-left: 0;
+}
+
+.prohibited-list li::before {
+    display: none;
+}
+
+.prohibited-list li i {
+    color: #ef4444;
+    font-size: 16px;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+.legal-highlight {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.legal-highlight i {
+    color: #ffc107;
+    font-size: 20px;
+    flex-shrink: 0;
 }
 
 /* Animations */
