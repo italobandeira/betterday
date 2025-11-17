@@ -122,16 +122,6 @@ A landing page é totalmente responsiva e se adapta a diferentes tamanhos de tel
 - ✅ iOS Safari
 - ✅ Chrome Mobile / Android
 
-## 📝 Próximos Passos
-
-1. ✅ Adicionar as capturas de tela do app na pasta `screenshots/`
-2. ⬜ Adicionar links reais para App Store e Google Play
-3. ⬜ Configurar domínio personalizado
-4. ⬜ Adicionar Analytics (Google Analytics, etc)
-5. ⬜ Otimizar imagens para web (compressão)
-6. ⬜ Adicionar meta tags para SEO
-7. ⬜ Adicionar Open Graph tags para redes sociais
-
 ## 🎨 Recursos Visuais
 
 A página inclui:
