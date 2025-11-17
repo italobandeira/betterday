@@ -4,7 +4,7 @@ Landing page moderna e minimalista para o aplicativo BetterDay, um rastreador de
 
 ## 🎨 Design
 
-A landing page foi inspirada no design do [HabitKit](https://www.habitkit.app/), mas adaptada com as cores e identidade visual do BetterDay:
+A landing page feita com as cores e identidade visual do BetterDay:
 
 - **Cor Principal**: Verde (#059669)
 - **Cor Secundária**: Turquesa (#14b8a6)
