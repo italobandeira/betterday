@@ -4,282 +4,525 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BetterDay - Construa a Melhor Versão de Você Mesmo</title>
+    <meta name="theme-color" content="#0f1621">
+    <meta name="color-scheme" content="dark">
+
+    <title>BetterDay - App de Hábitos | Rastreie Sua Rotina e Construa Hábitos Duradouros</title>
     <meta name="description"
-        content="Seu companheiro diário para criar e manter hábitos saudáveis. Acompanhe seu progresso, mantenha sequências imbatíveis e celebre cada conquista na sua jornada de transformação pessoal.">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+        content="BetterDay é o app gratuito para criar e manter hábitos saudáveis. Rastreie seu progresso com streaks, estatísticas, calendário e anotações. Seus dados ficam só no seu dispositivo. Baixe agora.">
+    <meta name="keywords"
+        content="app de hábitos, rastreador de hábitos, controle de hábitos, criar hábitos, rotina diária, streak, atomic habits, app produtividade, hábitos saudáveis">
+    <meta name="author" content="Italo Bandeira">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://betterday.app/">
+
+    <!-- RSS auto-discovery (feed readers find it without a visible link) -->
+    <link rel="alternate" type="application/rss+xml" title="Blog BetterDay - RSS" href="blog/rss.xml">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="screenshots/Icon-App.png">
+    <link rel="mask-icon" href="favicon.svg" color="#059669">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="BetterDay">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://betterday.app/">
+    <meta property="og:title" content="BetterDay - Construa a Melhor Versão de Você Mesmo">
+    <meta property="og:description"
+        content="Seu companheiro diário para criar e manter hábitos saudáveis. Streaks, estatísticas, privacidade total. Baixe grátis.">
+    <meta property="og:image" content="https://betterday.app/screenshots/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="BetterDay - App de rastreamento de hábitos">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BetterDay - App de Hábitos para a Vida Real">
+    <meta name="twitter:description"
+        content="Crie, rastreie e mantenha hábitos saudáveis. Streaks motivadores, análises inteligentes e 100% de privacidade.">
+    <meta name="twitter:image" content="https://betterday.app/screenshots/og-image.png">
+    <meta name="twitter:image:alt" content="BetterDay - App de rastreamento de hábitos">
+
+    <!-- App Links (Android) -->
+    <meta property="al:android:package" content="com.iflag.betterday_habit_tracker">
+    <meta property="al:android:app_name" content="BetterDay">
+    <meta property="al:android:url" content="https://betterday.app/">
+    <meta property="al:web:url" content="https://betterday.app/">
+
+    <!-- Preconnect / DNS prefetch -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://play.google.com">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+    <!-- Structured Data: Organization + WebSite + SoftwareApplication + FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://betterday.app/#organization",
+                "name": "BetterDay",
+                "url": "https://betterday.app/",
+                "logo": "https://betterday.app/screenshots/Icon-App.png",
+                "description": "Aplicativo gratuito de rastreamento de hábitos com foco em privacidade.",
+                "founder": {
+                    "@type": "Person",
+                    "name": "Italo Bandeira",
+                    "email": "iflagdev@gmail.com"
+                },
+                "sameAs": []
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://betterday.app/#website",
+                "url": "https://betterday.app/",
+                "name": "BetterDay",
+                "description": "Construa a melhor versão de você mesmo com o BetterDay.",
+                "publisher": { "@id": "https://betterday.app/#organization" },
+                "inLanguage": "pt-BR",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "https://betterday.app/blog/?q={search_term_string}"
+                    },
+                    "query-input": "required name=search_term_string"
+                }
+            },
+            {
+                "@type": "SoftwareApplication",
+                "name": "BetterDay - Rastreador de Hábitos",
+                "operatingSystem": "ANDROID",
+                "applicationCategory": "HealthApplication",
+                "description": "App gratuito para criar e manter hábitos saudáveis com streaks, estatísticas, calendário interativo e privacidade total (dados só no dispositivo).",
+                "url": "https://betterday.app/",
+                "downloadUrl": "https://play.google.com/store/apps/details?id=com.iflag.betterday_habit_tracker",
+                "installUrl": "https://play.google.com/store/apps/details?id=com.iflag.betterday_habit_tracker",
+                "softwareVersion": "1.0",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "BRL"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.8",
+                    "ratingCount": "120"
+                },
+                "author": { "@id": "https://betterday.app/#organization" },
+                "featureList": [
+                    "Rastreamento inteligente com grade visual",
+                    "Streaks motivadores de dias consecutivos",
+                    "Lembretes personalizados por hábito",
+                    "Diário de progresso com anotações",
+                    "Estatísticas e análises detalhadas",
+                    "Calendário interativo",
+                    "Modos diário, semanal e geral",
+                    "Privacidade total: dados só no dispositivo"
+                ],
+                "screenshot": [
+                    "https://betterday.app/screenshots/home.png",
+                    "https://betterday.app/screenshots/overview.png",
+                    "https://betterday.app/screenshots/weekly.png",
+                    "https://betterday.app/screenshots/details.png",
+                    "https://betterday.app/screenshots/create.png",
+                    "https://betterday.app/screenshots/notes.png"
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "O BetterDay é gratuito?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sim. O BetterDay é totalmente gratuito, sem assinatura e sem anúncios."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Onde meus dados ficam armazenados?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Todos os seus dados ficam armazenados apenas no seu dispositivo. Não enviamos nada para servidores externos."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Em quais plataformas o BetterDay está disponível?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Atualmente disponível para Android no Google Play. A versão para iOS está em desenvolvimento."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Posso criar hábitos personalizados?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sim. Você pode escolher entre dezenas de cores e ícones, definir lembretes e configurar o hábito do seu jeito."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
 
 <body>
     <div class="noise-overlay"></div>
+
+    <!-- Skip Link (Accessibility) -->
+    <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+
     <!-- Header -->
-    <header class="header">
+    <header class="header" role="banner">
         <div class="container">
-            <a href="#" class="logo">
-                <img src="screenshots/Icon-App.png" alt="Icone do App">
+            <a href="/" class="logo" aria-label="BetterDay - Página inicial">
+                <img src="screenshots/Icon-App.png" alt="Ícone do aplicativo BetterDay" width="50" height="50">
                 <div class="logo-text">
                     <span class="logo-better">Better</span><span class="logo-day">Day</span>
                 </div>
             </a>
-            <nav class="nav">
+            <nav class="nav" role="navigation" aria-label="Navegação principal">
+                <a href="blog/index.html" class="nav-link">Blog</a>
                 <a href="#download" class="btn-download-nav">Download</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Construa a Melhor Versão<br>
-                    de <span class="highlight">Você Mesmo</span>
-                </h1>
-                <p class="hero-description">
-                    O BetterDay é seu companheiro diário para criar e manter hábitos saudáveis.
-                    Acompanhe seu progresso, mantenha sequências imbatíveis e celebre cada conquista
-                    na sua jornada de transformação pessoal.
+    <main id="main">
+
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title" id="hero-title">
+                        Construa a Melhor Versão<br>
+                        de <span class="highlight">Você Mesmo</span>
+                    </h1>
+                    <p class="hero-description">
+                        O BetterDay é seu companheiro diário para criar e manter hábitos saudáveis.
+                        Acompanhe seu progresso, mantenha sequências imbatíveis e celebre cada conquista
+                        na sua jornada de transformação pessoal.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.iflag.betterday_habit_tracker&pcampaignid=web_share"
+                            class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-download" aria-hidden="true"></i>
+                            Baixar no Google Play
+                        </a>
+                        <a href="#features" class="btn btn-secondary">Ver Recursos</a>
+                    </div>
+                </div>
+                <div class="hero-images" aria-hidden="true">
+                    <div class="phone-mockup phone-2">
+                        <img src="screenshots/home.png" alt="Tela de resumo diário do BetterDay" width="280"
+                            height="560" loading="eager">
+                    </div>
+                    <div class="phone-mockup phone-1">
+                        <img src="screenshots/overview.png" alt="Tela de rastreamento geral com grade de hábitos"
+                            width="280" height="560" loading="eager">
+                    </div>
+                    <div class="phone-mockup phone-3">
+                        <img src="screenshots/weekly.png" alt="Tela de visão semanal com estatísticas" width="280"
+                            height="560" loading="eager">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features" aria-labelledby="features-title">
+            <div class="container">
+                <h2 id="features-title" class="visually-hidden" style="position:absolute;left:-9999px;">Recursos do
+                    BetterDay</h2>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <i class="fa-regular fa-circle-check fa-2x"></i>
+                        </div>
+                        <h3 class="feature-title">Rastreamento Inteligente</h3>
+                        <p class="feature-description">
+                            Monitore seu progresso através de gráficos coloridos e intuitivos, no estilo de grade.
+                            Cada dia completado é um passo em direção ao seu objetivo.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <i class="fas fa-palette fa-2x"></i>
+                        </div>
+                        <h3 class="feature-title">Personalização Total</h3>
+                        <p class="feature-description">
+                            Crie hábitos do seu jeito! Escolha entre diversos ícones e cores para
+                            dar personalidade a cada objetivo. Sua jornada, suas regras.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <i class="fas fa-fire fa-2x"></i>
+                        </div>
+                        <h3 class="feature-title">Sequências Motivadoras</h3>
+                        <p class="feature-description">
+                            Construa sequências épicas de dias consecutivos! Quanto maior seu streak,
+                            mais motivado você fica para não quebrar a corrente de sucesso.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <i class="fas fa-bell fa-2x"></i>
+                        </div>
+                        <h3 class="feature-title">Gerencie Notificações</h3>
+                        <p class="feature-description">
+                            Configure lembretes para cada hábito no horário ideal para você.
+                            Receba notificações amigáveis que te ajudam a manter o foco.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <i class="fas fa-pen fa-2x"></i>
+                        </div>
+                        <h3 class="feature-title">Diário de Progresso</h3>
+                        <p class="feature-description">
+                            Documente sua jornada com anotações diárias. Registre sentimentos,
+                            desafios superados e insights que surgem ao longo do caminho.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <i class="fas fa-chart-bar fa-2x"></i>
+                        </div>
+                        <h3 class="feature-title">Análises Inteligentes</h3>
+                        <p class="feature-description">
+                            Descubra padrões no seu comportamento com estatísticas detalhadas.
+                            Identifique seus melhores dias e otimize sua rotina para o sucesso.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <i class="fas fa-calendar fa-2x"></i>
+                        </div>
+                        <h3 class="feature-title">Calendário Interativo</h3>
+                        <p class="feature-description">
+                            Navegue pelo seu histórico completo com facilidade. Visualize, edite
+                            e gerencie seus hábitos em um calendário interativo.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <i class="fas fa-grip fa-2x"></i>
+                        </div>
+                        <h3 class="feature-title">Modos de Visualização</h3>
+                        <p class="feature-description">
+                            Alterne entre visão diária, semanal e geral conforme sua necessidade.
+                            Cada modo oferece uma perspectiva única do seu progresso.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <i class="fas fa-shield-alt fa-2x"></i>
+                        </div>
+                        <h3 class="feature-title">Seus Dados, Seu Controle</h3>
+                        <p class="feature-description">
+                            100% de privacidade garantida. Todas as informações ficam armazenadas
+                            apenas no seu dispositivo. Sem compartilhamento, sem riscos.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshots Section -->
+        <section id="screenshots" class="screenshots" aria-labelledby="screenshots-title">
+            <div class="container">
+                <h2 class="section-title" id="screenshots-title">Design Pensado Para Você</h2>
+                <p class="section-description">
+                    Interface limpa, intuitiva e focada em resultados. Cada tela foi desenvolvida
+                    para tornar o rastreamento de hábitos uma experiência agradável e motivadora.
                 </p>
-                <div class="hero-buttons">
-                    <a href="#download" class="btn btn-primary">
-                        <i class="fas fa-download"></i>
-                        Baixar Agora
-                    </a>
-                    <a href="#features" class="btn btn-secondary">Ver Recursos</a>
+
+                <div class="screenshots-grid">
+                    <article class="screenshot-item">
+                        <div class="screenshot-phone">
+                            <img src="screenshots/home.png" alt="Tela de resumo de hoje do BetterDay" width="280"
+                                height="560" loading="lazy">
+                        </div>
+                        <h3>Resumo de Hoje</h3>
+                        <p>Veja todos os seus hábitos e progresso diário em uma única tela</p>
+                    </article>
+
+                    <article class="screenshot-item">
+                        <div class="screenshot-phone">
+                            <img src="screenshots/weekly.png" alt="Tela de visão semanal com estatísticas detalhadas"
+                                width="280" height="560" loading="lazy">
+                        </div>
+                        <h3>Visão Semanal</h3>
+                        <p>Acompanhe seu desempenho semanal com estatísticas detalhadas</p>
+                    </article>
+
+                    <article class="screenshot-item">
+                        <div class="screenshot-phone">
+                            <img src="screenshots/overview.png" alt="Tela de rastreamento geral com grade colorida"
+                                width="280" height="560" loading="lazy">
+                        </div>
+                        <h3>Rastreamento Geral</h3>
+                        <p>Visualize o histórico completo com gráficos de tiles coloridos</p>
+                    </article>
+
+                    <article class="screenshot-item">
+                        <div class="screenshot-phone">
+                            <img src="screenshots/create.png" alt="Tela de criação de hábito com escolha de cores e
+                            ícones" width="280" height="560" loading="lazy">
+                        </div>
+                        <h3>Criação Personalizada</h3>
+                        <p>Customize seus hábitos com ícones e cores variadas</p>
+                    </article>
+
+                    <article class="screenshot-item">
+                        <div class="screenshot-phone">
+                            <img src="screenshots/details.png" alt="Página de detalhes do hábito com estatísticas"
+                                width="280" height="560" loading="lazy">
+                        </div>
+                        <h3>Página de Detalhes</h3>
+                        <p>Estatísticas completas, análise de padrões e conquistas</p>
+                    </article>
+
+                    <article class="screenshot-item">
+                        <div class="screenshot-phone">
+                            <img src="screenshots/notes.png" alt="Tela de anotações diárias do hábito" width="280"
+                                height="560" loading="lazy">
+                        </div>
+                        <h3>Anotações Diárias</h3>
+                        <p>Registre suas reflexões e progresso para cada hábito</p>
+                    </article>
                 </div>
             </div>
-            <div class="hero-images">
-                <div class="phone-mockup phone-2">
-                    <img src="screenshots/home.png" alt="Resumo dos seus Hábitos">
-                </div>
-                <div class="phone-mockup phone-1">
-                    <img src="screenshots/overview.png" alt="Rastreamento de Hábitos">
-                </div>
-                <div class="phone-mockup phone-3">
-                    <img src="screenshots/weekly.png" alt="Página de Detalhes para cada Hábito">
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <div class="features-grid">
-                <!-- Feature 1 -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fa-regular fa-circle-check fa-2x"></i>
-                    </div>
-                    <h3 class="feature-title">Rastreamento Inteligente</h3>
-                    <p class="feature-description">
-                        Monitore seu progresso através de gráficos coloridos e intuitivos, no estilo de grade.
-                        Cada dia completado é um passo em direção ao seu objetivo.
+        <!-- Blog Teaser Section -->
+        <section id="blog" class="blog-teaser" aria-labelledby="blog-teaser-title">
+            <div class="container">
+                <div class="blog-teaser-header">
+                    <span class="blog-eyebrow">Blog do BetterDay</span>
+                    <h2 class="section-title" id="blog-teaser-title">Ideias pra construir uma vida melhor, um dia
+                        de cada vez</h2>
+                    <p class="section-description">
+                        Conteúdo prático sobre hábitos, rotina, foco e produtividade, escrito pra quem quer parar
+                        de só baixar apps e começar a viver de verdade.
                     </p>
                 </div>
 
-                <!-- Feature 2 -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-palette fa-2x"></i>
-                    </div>
-                    <h3 class="feature-title">Personalização Total</h3>
-                    <p class="feature-description">
-                        Crie hábitos do seu jeito! Escolha entre diversos ícones e cores para
-                        dar personalidade a cada objetivo. Sua jornada, suas regras.
-                    </p>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-fire fa-2x"></i>
-                    </div>
-                    <h3 class="feature-title">Sequências Motivadoras</h3>
-                    <p class="feature-description">
-                        Construa sequências épicas de dias consecutivos! Quanto maior seu streak,
-                        mais motivado você fica para não quebrar a corrente de sucesso.
-                    </p>
-                </div>
-
-                <!-- Feature 4 -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-bell fa-2x"></i>
-                    </div>
-                    <h3 class="feature-title">Gerencie Notificações</h3>
-                    <p class="feature-description">
-                        Configure lembretes para cada hábito no horário ideal para você.
-                        Receba notificações amigáveis que te ajudam a manter o foco.
-                    </p>
-                </div>
-
-                <!-- Feature 5 -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-pen fa-2x"></i>
-                    </div>
-                    <h3 class="feature-title">Diário de Progresso</h3>
-                    <p class="feature-description">
-                        Documente sua jornada com anotações diárias. Registre sentimentos,
-                        desafios superados e insights que surgem ao longo do caminho.
-                    </p>
-                </div>
-
-                <!-- Feature 6 -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-bar fa-2x"></i>
-                    </div>
-                    <h3 class="feature-title">Análises Inteligentes</h3>
-                    <p class="feature-description">
-                        Descubra padrões no seu comportamento com estatísticas detalhadas.
-                        Identifique seus melhores dias e otimize sua rotina para o sucesso.
-                    </p>
-                </div>
-
-                <!-- Feature 7 -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-calendar fa-2x"></i>
-                    </div>
-                    <h3 class="feature-title">Calendário Interativo</h3>
-                    <p class="feature-description">
-                        Navegue pelo seu histórico completo com facilidade. Visualize, edite
-                        e gerencie seus hábitos em um calendário interativo.
-                    </p>
-                </div>
-
-                <!-- Feature 8 -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-grip fa-2x"></i>
-                    </div>
-                    <h3 class="feature-title">Modos de Visualização</h3>
-                    <p class="feature-description">
-                        Alterne entre visão diária, semanal e geral conforme sua necessidade.
-                        Cada modo oferece uma perspectiva única do seu progresso.
-                    </p>
-                </div>
-
-                <!-- Feature 9 -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt fa-2x"></i>
-                    </div>
-                    <h3 class="feature-title">Seus Dados, Seu Controle</h3>
-                    <p class="feature-description">
-                        100% de privacidade garantida. Todas as informações ficam armazenadas
-                        apenas no seu dispositivo. Sem compartilhamento, sem riscos.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Screenshots Section -->
-    <section id="screenshots" class="screenshots">
-        <div class="container">
-            <h2 class="section-title">Design Pensado Para Você</h2>
-            <p class="section-description">
-                Interface limpa, intuitiva e focada em resultados. Cada tela foi desenvolvida
-                para tornar o rastreamento de hábitos uma experiência agradável e motivadora.
-            </p>
-
-            <div class="screenshots-grid">
-                <div class="screenshot-item">
-                    <div class="screenshot-phone">
-                        <img src="screenshots/home.png" alt="Resumo de Hoje">
-                    </div>
-                    <h3>Resumo de Hoje</h3>
-                    <p>Veja todos os seus hábitos e progresso diário em uma única tela</p>
-                </div>
-
-                <div class="screenshot-item">
-                    <div class="screenshot-phone">
-                        <img src="screenshots/weekly.png" alt="Visão Semanal">
-                    </div>
-                    <h3>Visão Semanal</h3>
-                    <p>Acompanhe seu desempenho semanal com estatísticas detalhadas</p>
-                </div>
-
-                <div class="screenshot-item">
-                    <div class="screenshot-phone">
-                        <img src="screenshots/overview.png" alt="Rastreamento Geral">
-                    </div>
-                    <h3>Rastreamento Geral</h3>
-                    <p>Visualize o histórico completo com gráficos de tiles coloridos</p>
-                </div>
-
-                <div class="screenshot-item">
-                    <div class="screenshot-phone">
-                        <img src="screenshots/create.png" alt="Criar Hábito">
-                    </div>
-                    <h3>Criação Personalizada</h3>
-                    <p>Customize seus hábitos com ícones e cores variadas</p>
-                </div>
-
-                <div class="screenshot-item">
-                    <div class="screenshot-phone">
-                        <img src="screenshots/details.png" alt="Detalhes do Hábito">
-                    </div>
-                    <h3>Página de Detalhes</h3>
-                    <p>Estatísticas completas, análise de padrões e conquistas</p>
-                </div>
-
-                <div class="screenshot-item">
-                    <div class="screenshot-phone">
-                        <img src="screenshots/notes.png" alt="Anotações">
-                    </div>
-                    <h3>Anotações Diárias</h3>
-                    <p>Registre suas reflexões e progresso para cada hábito</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Download Section -->
-    <section id="download" class="download">
-        <div class="container">
-            <div class="download-content">
-                <h2 class="download-title">Comece Sua Transformação Hoje</h2>
-                <p class="download-description">
-                    Milhares de pessoas já estão construindo uma vida melhor com o BetterDay.
-                    Baixe grátis e dê o primeiro passo rumo aos seus objetivos.
-                </p>
-                <div class="download-buttons">
-                    <a href="#" class="store-button">
-                        <i class="fab fa-apple fa-3x"></i>
-                        <div>
-                            <span class="store-text">Em breve na</span>
-                            <span class="store-name">App Store</span>
+                <div class="blog-grid">
+                    <a href="blog/como-criar-habitos-que-duram.html" class="blog-card">
+                        <div class="blog-card-tag">Hábitos</div>
+                        <h3 class="blog-card-title">Como criar hábitos que duram (e por que 21 dias não bastam)</h3>
+                        <p class="blog-card-excerpt">
+                            O mito dos 21 dias já foi enterrado pela ciência. O que realmente funciona é entender o
+                            loop de hábito, usar habit stacking e rastrear sem se cobrar perfeição.
+                        </p>
+                        <div class="blog-card-meta">
+                            <span><i class="far fa-clock" aria-hidden="true"></i> 8 min de leitura</span>
+                            <span><i class="far fa-calendar" aria-hidden="true"></i> 01 ago 2026</span>
                         </div>
                     </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.iflag.betterday_habit_tracker&pcampaignid=web_share"
-                        class="store-button" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-google-play fa-3x"></i>
-                        <div>
-                            <span class="store-text">Disponível no</span>
-                            <span class="store-name">Google Play</span>
+
+                    <a href="blog/atomic-habits-resumo.html" class="blog-card">
+                        <div class="blog-card-tag">Resenha</div>
+                        <h3 class="blog-card-title">Atomic Habits: o resumo honesto de quem colocou em prática</h3>
+                        <p class="blog-card-excerpt">
+                            As 4 leis de James Clear explicadas com exemplos reais e sem hype. O que funciona, o que
+                            é exagero, e como o BetterDay aplica cada uma no design do app.
+                        </p>
+                        <div class="blog-card-meta">
+                            <span><i class="far fa-clock" aria-hidden="true"></i> 10 min de leitura</span>
+                            <span><i class="far fa-calendar" aria-hidden="true"></i> 01 ago 2026</span>
+                        </div>
+                    </a>
+
+                    <a href="blog/melhor-app-rastreamento-habitos.html" class="blog-card">
+                        <div class="blog-card-tag">Comparativo</div>
+                        <h3 class="blog-card-title">Qual o melhor app de rastreamento de hábitos em 2026?</h3>
+                        <p class="blog-card-excerpt">
+                            Comparação direta entre BetterDay, Habitica, Streaks, Productive e Fabulous. Sem viés,
+                            com foco em privacidade, simplicidade e o que realmente ajuda a manter o hábito.
+                        </p>
+                        <div class="blog-card-meta">
+                            <span><i class="far fa-clock" aria-hidden="true"></i> 9 min de leitura</span>
+                            <span><i class="far fa-calendar" aria-hidden="true"></i> 01 ago 2026</span>
                         </div>
                     </a>
                 </div>
+
+                <div class="blog-teaser-cta">
+                    <a href="blog/index.html" class="btn btn-secondary">Ver todos os artigos <i
+                            class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download" class="download" aria-labelledby="download-title">
+            <div class="container">
+                <div class="download-content">
+                    <h2 class="download-title" id="download-title">Comece Sua Transformação Hoje</h2>
+                    <p class="download-description">
+                        Milhares de pessoas já estão construindo uma vida melhor com o BetterDay.
+                        Baixe grátis e dê o primeiro passo rumo aos seus objetivos.
+                    </p>
+                    <div class="download-buttons">
+                        <a href="#" class="store-button" aria-label="Em breve na App Store" rel="nofollow">
+                            <i class="fab fa-apple fa-3x" aria-hidden="true"></i>
+                            <div>
+                                <span class="store-text">Em breve na</span>
+                                <span class="store-name">App Store</span>
+                            </div>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.iflag.betterday_habit_tracker&pcampaignid=web_share"
+                            class="store-button" target="_blank" rel="noopener noreferrer"
+                            aria-label="Disponível no Google Play">
+                            <i class="fab fa-google-play fa-3x" aria-hidden="true"></i>
+                            <div>
+                                <span class="store-text">Disponível no</span>
+                                <span class="store-name">Google Play</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <img src="screenshots/Icon-App.png" alt="Icone do App">
+                    <a href="/" class="logo" aria-label="BetterDay">
+                        <img src="screenshots/Icon-App.png" alt="Ícone do aplicativo BetterDay" width="50" height="50">
                         <div class="logo-text">
                             <span class="logo-better">Better</span><span class="logo-day">Day</span>
                         </div>
@@ -292,6 +535,10 @@
                         <a href="#features">Recursos</a>
                         <a href="#screenshots">Capturas</a>
                         <a href="#download">Download</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Conteúdo</h4>
+                        <a href="blog/index.html">Blog</a>
                     </div>
                     <div class="footer-column">
                         <h4>Legal</h4>

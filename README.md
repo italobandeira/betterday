@@ -16,8 +16,15 @@ A landing page feita com as cores e identidade visual do BetterDay:
 ```
 betterday_landing_page/
 ├── index.html          # Página principal
+├── privacy.html        # Política de privacidade
+├── terms.html          # Termos de uso
+├── contact.html        # Contato
+├── robots.txt          # Diretivas para crawlers
+├── sitemap.xml         # Sitemap com todas as URLs
+├── favicon.svg         # Ícone do site
 ├── styles.css          # Estilos CSS
 ├── script.js           # JavaScript para interatividade
+├── SEO_AUDIT.md        # Auditoria SEO + plano de melhorias
 ├── screenshots/        # Pasta para imagens do app
 │   ├── home.jpg       # Tela principal (resumo diário)
 │   ├── overview.jpg   # Rastreamento geral
@@ -25,6 +32,20 @@ betterday_landing_page/
 │   ├── details.jpg    # Página de detalhes do hábito
 │   ├── create.jpg     # Criação de hábito
 │   └── notes.jpg      # Anotações diárias
+├── css/
+│   ├── styles.css          # Estilos da landing page
+│   ├── contact-styles.css  # Estilos da página de contato
+│   ├── legal-styles.css    # Estilos das páginas legais
+│   ├── blog-styles.css     # Estilos do blog (listagem)
+│   └── article-styles.css  # Estilos dos artigos
+├── blog/
+│   ├── index.html                       # Listagem do blog
+│   ├── como-criar-habitos-que-duram.html
+│   ├── atomic-habits-resumo.html
+│   ├── melhor-app-rastreamento-habitos.html
+│   ├── rotina-matinal-produtividade.html
+│   ├── como-parar-de-procrastinar.html
+│   └── rss.xml                          # Feed RSS do blog
 └── README.md          # Este arquivo
 ```
 
@@ -139,4 +160,21 @@ Este projeto é privado e pertence ao BetterDay.
 ---
 
 Desenvolvido com ❤️ para o BetterDay
+
+---
+
+## 🔍 SEO & Blog
+
+O site foi otimizado para SEO técnico e inclui um blog completo pra captação de tráfego orgânico.
+
+**SEO técnico:**
+- Meta tags completas, Open Graph, Twitter Cards
+- JSON-LD: Organization, WebSite, SoftwareApplication, FAQPage, Article, BreadcrumbList, Person, Blog
+- `sitemap.xml` e `robots.txt`
+- Favicon SVG, canonical URLs, semantic HTML, ARIA
+- Mobile-first, com `theme-color` e `color-scheme`
+
+**Blog:** 5 posts completos (1.200-1.400 palavras cada) sobre criação de hábitos, Atomic Habits, comparativo de apps, rotina matinal e procrastinação. Inclui RSS feed.
+
+**Antes de subir pra produção**, leia [`SEO_AUDIT.md`](./SEO_AUDIT.md) — lá tem o checklist de coisas a fazer (criar imagem OG, ajustar domínio, Search Console, etc.).
 

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+    <channel>
+        <title>Blog BetterDay</title>
+        <link>https://betterday.app/blog/</link>
+        <atom:link href="https://betterday.app/blog/rss.xml" rel="self" type="application/rss+xml" />
+        <description>Conteúdo prático sobre hábitos, rotina, foco e produtividade. Sem fluff, com método.</description>
+        <language>pt-BR</language>
+        <lastBuildDate>Sat, 01 Aug 2026 10:00:00 -0300</lastBuildDate>
+        <ttl>1440</ttl>
+        <image>
+            <url>https://betterday.app/screenshots/Icon-App.png</url>
+            <title>Blog BetterDay</title>
+            <link>https://betterday.app/blog/</link>
+        </image>
+        <copyright>© 2026 BetterDay. Todos os direitos reservados.</copyright>
+        <managingEditor>iflagdev@gmail.com (Italo Bandeira)</managingEditor>
+        <webMaster>iflagdev@gmail.com (Italo Bandeira)</webMaster>
+
+        <item>
+            <title>Como criar hábitos que duram (e por que 21 dias não bastam)</title>
+            <link>https://betterday.app/blog/como-criar-habitos-que-duram.html</link>
+            <guid isPermaLink="true">https://betterday.app/blog/como-criar-habitos-que-duram.html</guid>
+            <description><![CDATA[O mito dos 21 dias caiu. Veja o que a ciência diz sobre como criar hábitos que duram: loop do hábito, habit stacking, rastreamento e o papel do ambiente.]]></description>
+            <content:encoded><![CDATA[<p>O mito dos 21 dias caiu. Veja o que a ciência diz sobre como criar hábitos que duram: loop do hábito, habit stacking, rastreamento e o papel do ambiente.</p>]]></content:encoded>
+            <category>Hábitos</category>
+            <author>iflagdev@gmail.com (Italo Bandeira)</author>
+            <dc:creator>Italo Bandeira</dc:creator>
+            <pubDate>Sat, 01 Aug 2026 10:00:00 -0300</pubDate>
+        </item>
+
+        <item>
+            <title>Atomic Habits: o resumo honesto de quem colocou em prática</title>
+            <link>https://betterday.app/blog/atomic-habits-resumo.html</link>
+            <guid isPermaLink="true">https://betterday.app/blog/atomic-habits-resumo.html</guid>
+            <description><![CDATA[As 4 leis de James Clear explicadas com exemplos reais e sem hype. O que funciona, o que é exagero, e como o BetterDay aplica cada uma no design do app.]]></description>
+            <content:encoded><![CDATA[<p>As 4 leis de James Clear explicadas com exemplos reais e sem hype. O que funciona, o que é exagero, e como o BetterDay aplica cada uma no design do app.</p>]]></content:encoded>
+            <category>Resenha</category>
+            <author>iflagdev@gmail.com (Italo Bandeira)</author>
+            <dc:creator>Italo Bandeira</dc:creator>
+            <pubDate>Sat, 01 Aug 2026 10:00:00 -0300</pubDate>
+        </item>
+
+        <item>
+            <title>Qual o melhor app de rastreamento de hábitos em 2026?</title>
+            <link>https://betterday.app/blog/melhor-app-rastreamento-habitos.html</link>
+            <guid isPermaLink="true">https://betterday.app/blog/melhor-app-rastreamento-habitos.html</guid>
+            <description><![CDATA[Comparação direta entre BetterDay, Habitica, Streaks, Productive e Fabulous. Sem viés, com foco em privacidade, simplicidade e o que realmente ajuda.]]></description>
+            <content:encoded><![CDATA[<p>Comparação direta entre BetterDay, Habitica, Streaks, Productive e Fabulous. Sem viés, com foco em privacidade, simplicidade e o que realmente ajuda.</p>]]></content:encoded>
+            <category>Comparativo</category>
+            <author>iflagdev@gmail.com (Italo Bandeira)</author>
+            <dc:creator>Italo Bandeira</dc:creator>
+            <pubDate>Sat, 01 Aug 2026 10:00:00 -0300</pubDate>
+        </item>
+
+        <item>
+            <title>Rotina matinal: o que a ciência diz (e o que é só marketing)</title>
+            <link>https://betterday.app/blog/rotina-matinal-produtividade.html</link>
+            <guid isPermaLink="true">https://betterday.app/blog/rotina-matinal-produtividade.html</guid>
+            <description><![CDATA[Acordar às 5h, água com limão, meditar 20 minutos... Funciona mesmo? O que os estudos mostram sobre rotinas matinais e o que vale a pena aplicar.]]></description>
+            <content:encoded><![CDATA[<p>Acordar às 5h, água com limão, meditar 20 minutos... Funciona mesmo? O que os estudos mostram sobre rotinas matinais e o que vale a pena aplicar.</p>]]></content:encoded>
+            <category>Rotina</category>
+            <author>iflagdev@gmail.com (Italo Bandeira)</author>
+            <dc:creator>Italo Bandeira</dc:creator>
+            <pubDate>Sat, 01 Aug 2026 10:00:00 -0300</pubDate>
+        </item>
+
+        <item>
+            <title>Como parar de procrastinar: 7 técnicas baseadas em evidência</title>
+            <link>https://betterday.app/blog/como-parar-de-procrastinar.html</link>
+            <guid isPermaLink="true">https://betterday.app/blog/como-parar-de-procrastinar.html</guid>
+            <description><![CDATA[Procrastinação não é preguiça — é regulação emocional. Aprenda 7 técnicas reais, baseadas em pesquisa, pra começar a fazer o que precisa ser feito.]]></description>
+            <content:encoded><![CDATA[<p>Procrastinação não é preguiça — é regulação emocional. Aprenda 7 técnicas reais, baseadas em pesquisa, pra começar a fazer o que precisa ser feito.</p>]]></content:encoded>
+            <category>Foco</category>
+            <author>iflagdev@gmail.com (Italo Bandeira)</author>
+            <dc:creator>Italo Bandeira</dc:creator>
+            <pubDate>Sat, 01 Aug 2026 10:00:00 -0300</pubDate>
+        </item>
+
+    </channel>
+</rss>
