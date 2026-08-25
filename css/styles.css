@@ -161,6 +161,164 @@ textarea:focus-visible {
     transform: scale(0.96);
 }
 
+/* Language Switcher (PT | EN dropdown) */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.lang-switcher {
+    position: relative;
+}
+
+.lang-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.lang-btn:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.lang-btn:focus-visible {
+    outline: 2px solid var(--primary-green);
+    outline-offset: 2px;
+}
+
+.lang-btn .fa-globe {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.lang-code {
+    line-height: 1;
+}
+
+.lang-chevron {
+    font-size: 9px;
+    opacity: 0.6;
+    transition: transform 0.25s ease;
+}
+
+.lang-switcher.is-open .lang-chevron {
+    transform: rotate(180deg);
+}
+
+.lang-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    min-width: 160px;
+    margin: 0;
+    padding: 6px;
+    list-style: none;
+    background: rgba(26, 35, 50, 0.98);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+    z-index: 1100;
+}
+
+.lang-switcher.is-open .lang-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-menu li {
+    list-style: none;
+}
+
+.lang-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 9px 12px;
+    border-radius: 6px;
+    color: var(--text-secondary) !important;
+    text-decoration: none !important;
+    font-weight: 500;
+    font-size: 14px;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.lang-option:hover,
+.lang-option:focus-visible {
+    background: rgba(5, 150, 105, 0.12);
+    color: var(--text-primary) !important;
+    outline: none;
+}
+
+.lang-option.is-active {
+    color: var(--primary-green) !important;
+    background: rgba(5, 150, 105, 0.08);
+}
+
+.lang-option .lang-native {
+    font-weight: 600;
+}
+
+.lang-option .lang-sub {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-secondary);
+}
+
+.lang-option.is-active .lang-sub {
+    background: rgba(5, 150, 105, 0.2);
+    color: var(--primary-green);
+}
+
+@media (max-width: 640px) {
+    .lang-btn {
+        padding: 7px 10px;
+        font-size: 13px;
+    }
+    .lang-menu {
+        right: -8px;
+        min-width: 150px;
+    }
+}
+
+/* Small language availability note used on translated pages
+   to flag links that don't have an English counterpart yet. */
+.blog-card-lang-note {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: var(--text-secondary);
+    opacity: 0.75;
+}
+
 /* Hero Section */
 .hero {
     padding: 140px 0 100px;
@@ -922,6 +1080,21 @@ textarea:focus-visible {
 
     .nav {
         display: none;
+    }
+
+    /* O .lang-switcher continua visível mesmo sem o .nav, pra preservar a troca de idioma. */
+    .header-right {
+        gap: 0;
+    }
+
+    .lang-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+        gap: 6px;
+    }
+
+    .lang-btn .fa-globe {
+        font-size: 12px;
     }
 
     .hero {

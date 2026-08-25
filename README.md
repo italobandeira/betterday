@@ -15,16 +15,19 @@ A landing page feita com as cores e identidade visual do BetterDay:
 
 ```
 betterday_landing_page/
-├── index.html          # Página principal
+├── index.html          # Página principal (PT-BR)
 ├── privacy.html        # Política de privacidade
 ├── terms.html          # Termos de uso
-├── contact.html        # Contato
+├── contact.html        # Contato (PT-BR)
 ├── robots.txt          # Diretivas para crawlers
-├── sitemap.xml         # Sitemap com todas as URLs
+├── sitemap.xml         # Sitemap com todas as URLs (PT + EN)
 ├── favicon.svg         # Ícone do site
 ├── styles.css          # Estilos CSS
 ├── script.js           # JavaScript para interatividade
 ├── SEO_AUDIT.md        # Auditoria SEO + plano de melhorias
+├── en/                 # Versão em inglês (subpasta — padrão SEO)
+│   ├── index.html      # Homepage em inglês
+│   └── contact.html    # Contato em inglês
 ├── screenshots/        # Pasta para imagens do app
 │   ├── home.jpg       # Tela principal (resumo diário)
 │   ├── overview.jpg   # Rastreamento geral

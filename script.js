@@ -99,3 +99,48 @@ document.querySelectorAll('.store-button, .btn-download-nav').forEach(btn => {
 // Log de carregamento
 console.log('BetterDay Landing Page carregada com sucesso! 🚀');
 
+// --- Language switcher dropdown ---------------------------------------------
+// Pequeno controller para o dropdown PT | EN. Sem dependências externas.
+(function initLangSwitcher() {
+    const switchers = document.querySelectorAll('.lang-switcher');
+    if (!switchers.length) return;
+
+    switchers.forEach((switcher) => {
+        const button = switcher.querySelector('.lang-btn');
+        const menu = switcher.querySelector('.lang-menu');
+        if (!button || !menu) return;
+
+        const setOpen = (isOpen) => {
+            button.setAttribute('aria-expanded', String(isOpen));
+            switcher.classList.toggle('is-open', isOpen);
+        };
+
+        // Toggle no clique do botão
+        button.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = button.getAttribute('aria-expanded') === 'true';
+            // Fecha qualquer outro dropdown aberto
+            document.querySelectorAll('.lang-switcher.is-open').forEach((s) => {
+                if (s !== switcher) s.classList.remove('is-open');
+                const b = s.querySelector('.lang-btn');
+                if (b) b.setAttribute('aria-expanded', 'false');
+            });
+            setOpen(!isOpen);
+        });
+
+        // Fecha ao clicar fora
+        document.addEventListener('click', (e) => {
+            if (!switcher.contains(e.target)) setOpen(false);
+        });
+
+        // Fecha com Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                setOpen(false);
+                button.focus();
+            }
+        });
+    });
+})();
+
+

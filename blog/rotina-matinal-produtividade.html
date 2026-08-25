@@ -24,6 +24,11 @@
 
     <link rel="canonical" href="https://betterday.app/blog/rotina-matinal-produtividade.html">
 
+    <!-- Hreflang: tell Google this is the Portuguese version and link to the EN counterpart -->
+    <link rel="alternate" hreflang="pt-BR" href="https://betterday.app/blog/rotina-matinal-produtividade.html">
+    <link rel="alternate" hreflang="en" href="https://betterday.app/en/blog/morning-routine-productivity.html">
+    <link rel="alternate" hreflang="x-default" href="https://betterday.app/blog/rotina-matinal-produtividade.html">
+
     <!-- RSS auto-discovery -->
     <link rel="alternate" type="application/rss+xml" title="Blog BetterDay - RSS" href="rss.xml">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -32,6 +37,7 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="BetterDay">
     <meta property="og:locale" content="pt_BR">
+    <meta property="og:locale:alternate" content="en_US">
     <meta property="og:url" content="https://betterday.app/blog/rotina-matinal-produtividade.html">
     <meta property="og:title" content="Rotina matinal: o que a ciência diz (e o que é só marketing)">
     <meta property="og:description" content="O que a ciência diz sobre rotinas matinais. Sem hype, com evidência.">
@@ -110,10 +116,38 @@
                     <span class="logo-better">Better</span><span class="logo-day">Day</span>
                 </div>
             </a>
-            <nav class="nav" role="navigation" aria-label="Navegação principal">
-                <a href="../index.html" class="nav-link">App</a>
-                <a href="../index.html#download" class="btn-download-nav">Download</a>
-            </nav>
+            <div class="header-right">
+                <nav class="nav" role="navigation" aria-label="Navegação principal">
+                    <a href="../index.html" class="nav-link">App</a>
+                    <a href="../index.html#download" class="btn-download-nav">Download</a>
+                </nav>
+
+                <!-- Language switcher (kept outside .nav so it stays visible on small mobile) -->
+                <div class="lang-switcher" data-current-lang="pt-BR">
+                    <button class="lang-btn" type="button" aria-haspopup="true" aria-expanded="false"
+                        aria-label="Selecionar idioma">
+                        <i class="fas fa-globe" aria-hidden="true"></i>
+                        <span class="lang-code">PT</span>
+                        <i class="fas fa-chevron-down lang-chevron" aria-hidden="true"></i>
+                    </button>
+                    <ul class="lang-menu" role="menu">
+                        <li role="none">
+                            <a href="rotina-matinal-produtividade.html" role="menuitem" class="lang-option is-active" data-lang="pt-BR"
+                                hreflang="pt-BR">
+                                <span class="lang-native">Português</span>
+                                <span class="lang-sub">BR</span>
+                            </a>
+                        </li>
+                        <li role="none">
+                            <a href="../en/blog/morning-routine-productivity.html" role="menuitem" class="lang-option" data-lang="en"
+                                hreflang="en">
+                                <span class="lang-native">English</span>
+                                <span class="lang-sub">EN</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -404,6 +438,7 @@
                     <div class="footer-column">
                         <h4>Conteúdo</h4>
                         <a href="index.html">Blog</a>
+                        <a href="../en/blog/morning-routine-productivity.html" hreflang="en">Blog (EN)</a>
                     </div>
                     <div class="footer-column">
                         <h4>Legal</h4>

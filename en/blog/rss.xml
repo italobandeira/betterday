@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+    <channel>
+        <title>BetterDay Blog</title>
+        <link>https://betterday.app/en/blog/</link>
+        <atom:link href="https://betterday.app/en/blog/rss.xml" rel="self" type="application/rss+xml" />
+        <description>Practical content on habits, routine, focus and productivity. No fluff, with method.</description>
+        <language>en</language>
+        <lastBuildDate>Sat, 01 Aug 2026 10:00:00 -0300</lastBuildDate>
+        <ttl>1440</ttl>
+        <image>
+            <url>https://betterday.app/screenshots/Icon-App.png</url>
+            <title>BetterDay Blog</title>
+            <link>https://betterday.app/en/blog/</link>
+        </image>
+        <copyright>© 2026 BetterDay. All rights reserved.</copyright>
+        <managingEditor>iflagdev@gmail.com (Italo Bandeira)</managingEditor>
+        <webMaster>iflagdev@gmail.com (Italo Bandeira)</webMaster>
+
+        <item>
+            <title>How to build habits that last (and why 21 days isn't enough)</title>
+            <link>https://betterday.app/en/blog/how-to-build-habits-that-last.html</link>
+            <guid isPermaLink="true">https://betterday.app/en/blog/how-to-build-habits-that-last.html</guid>
+            <description><![CDATA[The 21-day myth is dead. See what science says about how to build habits that last: the habit loop, habit stacking, tracking, and the role of your environment.]]></description>
+            <content:encoded><![CDATA[<p>The 21-day myth is dead. See what science says about how to build habits that last: the habit loop, habit stacking, tracking, and the role of your environment.</p>]]></content:encoded>
+            <category>Habits</category>
+            <author>iflagdev@gmail.com (Italo Bandeira)</author>
+            <dc:creator>Italo Bandeira</dc:creator>
+            <pubDate>Sat, 01 Aug 2026 10:00:00 -0300</pubDate>
+        </item>
+
+        <item>
+            <title>Atomic Habits: an honest summary from someone who put it in practice</title>
+            <link>https://betterday.app/en/blog/atomic-habits-review.html</link>
+            <guid isPermaLink="true">https://betterday.app/en/blog/atomic-habits-review.html</guid>
+            <description><![CDATA[James Clear's 4 Laws explained with real examples and no hype. What works, what's overblown, and how BetterDay applies each one in its app design.]]></description>
+            <content:encoded><![CDATA[<p>James Clear's 4 Laws explained with real examples and no hype. What works, what's overblown, and how BetterDay applies each one in its app design.</p>]]></content:encoded>
+            <category>Review</category>
+            <author>iflagdev@gmail.com (Italo Bandeira)</author>
+            <dc:creator>Italo Bandeira</dc:creator>
+            <pubDate>Sat, 01 Aug 2026 10:00:00 -0300</pubDate>
+        </item>
+
+        <item>
+            <title>What is the best habit tracker app in 2026?</title>
+            <link>https://betterday.app/en/blog/best-habit-tracker-app-2026.html</link>
+            <guid isPermaLink="true">https://betterday.app/en/blog/best-habit-tracker-app-2026.html</guid>
+            <description><![CDATA[A direct comparison of BetterDay, Habitica, Streaks, Productive and Fabulous. Unbiased, with a focus on privacy, simplicity, and what actually helps.]]></description>
+            <content:encoded><![CDATA[<p>A direct comparison of BetterDay, Habitica, Streaks, Productive and Fabulous. Unbiased, with a focus on privacy, simplicity, and what actually helps.</p>]]></content:encoded>
+            <category>Comparison</category>
+            <author>iflagdev@gmail.com (Italo Bandeira)</author>
+            <dc:creator>Italo Bandeira</dc:creator>
+            <pubDate>Sat, 01 Aug 2026 10:00:00 -0300</pubDate>
+        </item>
+
+        <item>
+            <title>Morning routine: what science says (and what's just marketing)</title>
+            <link>https://betterday.app/en/blog/morning-routine-productivity.html</link>
+            <guid isPermaLink="true">https://betterday.app/en/blog/morning-routine-productivity.html</guid>
+            <description><![CDATA[Waking up at 5am, lemon water, 20 minutes of meditation... does it actually work? What studies show about morning routines and what is worth applying.]]></description>
+            <content:encoded><![CDATA[<p>Waking up at 5am, lemon water, 20 minutes of meditation... does it actually work? What studies show about morning routines and what is worth applying.</p>]]></content:encoded>
+            <category>Routine</category>
+            <author>iflagdev@gmail.com (Italo Bandeira)</author>
+            <dc:creator>Italo Bandeira</dc:creator>
+            <pubDate>Sat, 01 Aug 2026 10:00:00 -0300</pubDate>
+        </item>
+
+        <item>
+            <title>How to stop procrastinating: 7 evidence-based techniques</title>
+            <link>https://betterday.app/en/blog/how-to-stop-procrastinating.html</link>
+            <guid isPermaLink="true">https://betterday.app/en/blog/how-to-stop-procrastinating.html</guid>
+            <description><![CDATA[Procrastination is not laziness — it's emotional regulation. Learn 7 real, research-backed techniques to start doing what needs to be done.]]></description>
+            <content:encoded><![CDATA[<p>Procrastination is not laziness — it's emotional regulation. Learn 7 real, research-backed techniques to start doing what needs to be done.</p>]]></content:encoded>
+            <category>Focus</category>
+            <author>iflagdev@gmail.com (Italo Bandeira)</author>
+            <dc:creator>Italo Bandeira</dc:creator>
+            <pubDate>Sat, 01 Aug 2026 10:00:00 -0300</pubDate>
+        </item>
+
+    </channel>
+</rss>
